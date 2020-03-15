@@ -1,5 +1,6 @@
 from gpiozero import Buzzer
 
 bz = Buzzer(3)
-bz.on()
-bz.beep()
+while True:
+    bz.on()
+    bz.off()
