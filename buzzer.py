@@ -12,7 +12,7 @@ class RpiBuzzer:
             await asyncio.sleep(delay)
             self.bz.off()
 
-    async def boo_beep(self, first_sound=0.0001, second_sound=0.0000001, sleep=0.000001):
+    async def boo_beep(self, first_sound=0.001, second_sound=0.0000001, sleep=0.0001):
         """
         I'm creative I know
         """

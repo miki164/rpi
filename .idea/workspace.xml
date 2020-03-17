@@ -4,7 +4,6 @@
     <list default="true" id="cd8d63a2-8109-4b0f-8557-e371217a6e6d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/buzzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/buzzer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +45,7 @@
       <option name="presentableId" value="Default" />
       <updated>1584286035476</updated>
       <workItem from="1584286039965" duration="3542000" />
-      <workItem from="1584459530449" duration="2469000" />
+      <workItem from="1584459530449" duration="2755000" />
     </task>
     <servers />
   </component>
