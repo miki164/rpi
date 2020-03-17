@@ -2,4 +2,4 @@ from buzzer import RpiBuzzer
 import asyncio
 
 buzzer = RpiBuzzer()
-asyncio.run(buzzer.make_beep())
+asyncio.run(buzzer.make_beep(20))
