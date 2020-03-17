@@ -1,3 +1,4 @@
 from buzzer import RpiBuzzer
 
-RpiBuzzer.make_beep()
+buzzer = RpiBuzzer()
+buzzer.make_beep()
