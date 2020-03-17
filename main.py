@@ -1,4 +1,4 @@
 from buzzer import RpiBuzzer
 
 buzzer = RpiBuzzer()
-buzzer.make_beep()
+await buzzer.make_beep()
