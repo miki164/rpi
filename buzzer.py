@@ -7,5 +7,5 @@ class RpiBuzzer:
 
     async def make_beep(self):
         for i in range(100):
-            await self.bz.on()
-            await self.bz.off()
+            self.bz.on()
+            self.bz.off()
