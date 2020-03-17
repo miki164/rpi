@@ -2,4 +2,6 @@ from buzzer import RpiBuzzer
 import asyncio
 
 buzzer = RpiBuzzer()
-asyncio.run(buzzer.boo_beep())
+loop = asyncio.get_event_loop()
+resp = loop.run_until_complete(buzzer.test())
+print(resp)

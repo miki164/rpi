@@ -12,10 +12,15 @@ class RpiBuzzer:
             await asyncio.sleep(delay)
             self.bz.off()
 
-    async def boo_beep(self):
+    async def boo_beep(self, first_sound=0.0001, second_sound=0.0000001, sleep=0.000001):
         """
         I'm creative I know
         """
-        await self.make_noise(0.0003)
-        await asyncio.sleep(0.0000001)
-        await self.make_noise(0.0000001)
+        await self.make_noise(first_sound)
+        await asyncio.sleep(sleep)
+        await self.make_noise(second_sound)
+
+    async def test(self):
+        for i in range(100):
+            await self.make_noise(0.00001)
+            yield i
