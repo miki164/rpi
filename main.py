@@ -1,6 +1,3 @@
-from gpiozero import Buzzer
+from buzzer import RpiBuzzer
 
-bz = Buzzer(13)
-while True:
-    bz.on()
-    bz.off()
+RpiBuzzer.make_beep()
