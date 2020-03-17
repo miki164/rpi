@@ -19,8 +19,3 @@ class RpiBuzzer:
         await self.make_noise(first_sound)
         await asyncio.sleep(sleep)
         await self.make_noise(second_sound)
-
-    async def test(self):
-        for i in range(100):
-            await self.make_noise(0.00001)
-            yield i
