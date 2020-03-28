@@ -1,5 +1,12 @@
 import React, {Component} from 'react';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  useParams
+} from "react-router-dom";
+import * as qs from 'qs';
 
 class App extends Component {
     constructor(props) {
@@ -16,13 +23,21 @@ class App extends Component {
 
     componentDidMount() {
         this.callAPI();
-        console.log(this.state.apiResponse)
     }
 
     render() {
         return (
-            this.state.apiResponse
+            <Router>
+                <div>
+                    <Switch>
+                        <Route path="/">
+                           <div dangerouslySetInnerHTML={{ __html: this.state.apiResponse }} />
+                        </Route>
+                    </Switch>
+                </div>
+            </Router>
         )
     }
 }
+
 export default App;
